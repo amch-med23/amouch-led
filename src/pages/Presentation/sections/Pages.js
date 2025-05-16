@@ -15,6 +15,7 @@ Coded by www.creative-tim.com
 
 // react-router-dom components
 import { Link } from "react-router-dom";
+import "../../../assets/index.css";
 
 // @mui material components
 import Container from "@mui/material/Container";
@@ -22,7 +23,7 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
+//import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
@@ -52,13 +53,9 @@ function Pages() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
-          <MKBadge
-            variant="contained"
-            color="info"
-            badgeContent="Stimulez la créativité et la notoriété de votre marque"
-            container
-            sx={{ mb: 2 }}
-          />
+          <span className="stimuler-creativite">
+            Stimulez la créativité et la notoriété de votre marque
+          </span>
           <MKTypography variant="h2" fontWeight="bold">
             Avec notre travail professionnel sur le terrain
           </MKTypography>

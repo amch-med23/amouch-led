@@ -1,0 +1,43 @@
+.header_image_logo {
+    height: 212px;
+    width: 212px;
+    margin-bottom: -140px;
+    border-radius: 20px;
+}
+.Devis-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.center-devis-title{
+    text-align: center;
+}
+.devis-text{
+    max-width: 600px;
+}
+.stimuler-creativite {
+    height: auto;
+    margin-bottom: 16px;
+    padding: 0.55em 0.9em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    white-space: none;
+    vertical-align: baseline;
+    border: none;
+    border-radius: 0.5rem;
+    background: #aecef7;
+    color: #095bc6;
+    position: relative;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.social_button {
+    margin: 10px;
+}

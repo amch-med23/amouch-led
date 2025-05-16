@@ -12,6 +12,8 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+//maincss file imports
+import "assets/index.css";
 
 // @mui material components
 import Container from "@mui/material/Container";
@@ -22,6 +24,7 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
+import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -34,6 +37,7 @@ import Counters from "pages/Presentation/sections/Counters";
 //import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
+//import Devis from "pages/devis";
 //import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
@@ -45,6 +49,7 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/ecran-led-maroc.webp";
+//import mainLogo from "assets/images/logo-amchled.jpg";
 
 function Presentation() {
   return (
@@ -53,14 +58,14 @@ function Presentation() {
         routes={routes}
         action={{
           type: "external",
-          route: "",
+          route: "/pages/devis",
           label: "Demander un devis",
           color: "info",
         }}
         sticky
       />
       <MKBox
-        minHeight="85vh"
+        minHeight="95vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,
@@ -70,6 +75,7 @@ function Presentation() {
           placeItems: "center",
         }}
       >
+        {/*<img className="header_image_logo" alt="logo" src={mainLogo} />*/}
         <Container>
           <Grid container item xs={12} lg={10} justifyContent="center" mx="auto">
             <MKTypography
@@ -96,6 +102,17 @@ function Presentation() {
               d&rsquo;écrans LED, nous sommes là pour vous guider à travers tous vos besoins
               publicitaires, nous sommes heureux de faire des affaires.
             </MKTypography>
+            <MKBox component="section" py={2}>
+              <MKButton
+                variant="gradient"
+                color="info"
+                onClick={() =>
+                  document.getElementById("counters").scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Commencer
+              </MKButton>
+            </MKBox>
           </Grid>
         </Container>
       </MKBox>
@@ -176,11 +193,11 @@ function Presentation() {
                   component="a"
                   href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
                   target="_blank"
-                  color="twitter"
+                  color="instagram"
                   sx={{ mr: 1 }}
                 >
-                  <i className="fab fa-twitter" />
-                  &nbsp;Tweet
+                  <i className="fab fa-instagram" />
+                  &nbsp;Instagram
                 </MKSocialButton>
                 <MKSocialButton
                   component="a"
@@ -190,16 +207,16 @@ function Presentation() {
                   sx={{ mr: 1 }}
                 >
                   <i className="fab fa-facebook" />
-                  &nbsp;Share
+                  &nbsp;Facebook
                 </MKSocialButton>
                 <MKSocialButton
                   component="a"
                   href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit-react"
                   target="_blank"
-                  color="pinterest"
+                  color="whatsapp"
                 >
-                  <i className="fab fa-pinterest" />
-                  &nbsp;Pin it
+                  <i className="fab fa-whatsapp" />
+                  &nbsp;Whatsapp
                 </MKSocialButton>
               </Grid>
             </Grid>

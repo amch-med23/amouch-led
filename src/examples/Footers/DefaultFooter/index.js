@@ -60,7 +60,7 @@ function DefaultFooter({ content }) {
             </MKBox>
           </Grid>
           {menus.map(({ name: title, items }) => (
-            <Grid key={title} item xs={6} md={2} sx={{ mb: 3 }}>
+            <Grid key={title} item xs={6} md={3} sx={{ mb: 3 }}>
               <MKTypography
                 display="block"
                 variant="button"

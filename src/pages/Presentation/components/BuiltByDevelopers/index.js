@@ -16,16 +16,15 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
+//import Icon from "@mui/material/Icon";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import coverBuiltByPros from "assets/images/bg-led-new.png";
 
 function BuiltByDevelopers() {
-  const bgImage =
-    "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
-
+  const bgImage = coverBuiltByPros;
   return (
     <MKBox
       display="flex"
@@ -36,8 +35,8 @@ function BuiltByDevelopers() {
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(
-            rgba(gradients.dark.main, 0.8),
-            rgba(gradients.dark.state, 0.8)
+            rgba(gradients.dark.main, 0.6),
+            rgba(gradients.dark.state, 0.6)
           )}, url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -46,17 +45,18 @@ function BuiltByDevelopers() {
       <Container>
         <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
           <MKTypography variant="h4" color="white" fontWeight="bold">
-            Built by developers
+            Construit par des professionnels
           </MKTypography>
           <MKTypography variant="h1" color="white" mb={1}>
-            Complex Documentation
+            La meilleure installation et mise en œuvre jamais réalisée
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-            From colors, cards, typography to complex elements, you will find the full
-            documentation. Play with the utility classes and you will create unlimited combinations
-            for our components.
+            Des écrans LED aux logos 3D, de l&apos;installation intérieure aux installations
+            extérieures, en passant par la conception d&apos;écrans LED carrés pour fourgons et
+            fourgonnettes, nous vous proposons une large gamme de produits. Notre priorité est de
+            fournir des produits de haute qualité et de satisfaire nos clients.
           </MKTypography>
-          <MKTypography
+          {/*<MKTypography
             component="a"
             href="https://www.creative-tim.com/learning-lab/react/overview/material-kit/"
             target="_self"
@@ -80,7 +80,7 @@ function BuiltByDevelopers() {
             }}
           >
             Read docs <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-          </MKTypography>
+          </MKTypography> */}
         </Grid>
       </Container>
     </MKBox>

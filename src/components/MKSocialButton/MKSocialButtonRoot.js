@@ -71,6 +71,7 @@ export default styled(Button)(({ theme, ownerState }) => {
     backgroundColor: backgroundColorValue,
     color: white.main,
     boxShadow: "none",
+    margin: "5px",
 
     "&:hover": {
       backgroundColor: focusedBackgroundColorValue,

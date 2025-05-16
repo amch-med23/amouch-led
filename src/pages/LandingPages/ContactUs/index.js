@@ -32,6 +32,7 @@ import footerRoutes from "footer.routes";
 
 // Image
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+//import LogoImage from "assets/images/logo-amchled.jpg";
 
 function ContactUs() {
   return (
@@ -41,8 +42,8 @@ function ContactUs() {
           routes={routes}
           action={{
             type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-react",
-            label: "free download",
+            route: "/pages/devis",
+            label: "Demander un devis",
             color: "info",
           }}
         />
@@ -90,20 +91,21 @@ function ContactUs() {
               mt={-3}
             >
               <MKTypography variant="h3" color="white">
-                Contact us
+                Contactez-nous
               </MKTypography>
             </MKBox>
             <MKBox p={3}>
               <MKTypography variant="body2" color="text" mb={3}>
-                For further questions, including partnership opportunities, please email
-                hello@creative-tim.com or contact using our contact form.
+                Pour toute question complémentaire, notamment sur les opportunités de partenariat,
+                veuillez envoyer un e-mail à amouchled@gmail.com ou nous contacter via notre
+                formulaire de contact.
               </MKTypography>
               <MKBox width="100%" component="form" method="post" autoComplete="off">
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
                     <MKInput
                       variant="standard"
-                      label="Full Name"
+                      label="Nom et prénom"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
                     />
@@ -120,8 +122,8 @@ function ContactUs() {
                   <Grid item xs={12}>
                     <MKInput
                       variant="standard"
-                      label="What can we help you?"
-                      placeholder="Describe your problem in at least 250 characters"
+                      label="En quoi pouvons-nous vous aider ?"
+                      placeholder="Décrivez votre problème en au moins 250 caractères"
                       InputLabelProps={{ shrink: true }}
                       multiline
                       fullWidth
@@ -131,7 +133,7 @@ function ContactUs() {
                 </Grid>
                 <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
                   <MKButton type="submit" variant="gradient" color="info">
-                    Send Message
+                    Envoyer un message
                   </MKButton>
                 </Grid>
               </MKBox>
